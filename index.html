@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-logo">
+        <img
+          class="logo"
+          src="./public/image/logo-alura.svg"
+          alt="logo de Alura"
+          height="48px"
+          width="31px"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="one">
+        <div class="container_input">
+          <div class="flex_auto">
+            <textarea
+              placeholder="Ingresa el texto aquí"
+              name=""
+              classname="message"
+              id="messageInput"
+            ></textarea>
+          </div>
+          <div class="information">
+            <img src="./public/image/icon-information.svg" alt="" /><span
+              class="message"
+            >
+              Solo letras minúsculas y sin acentos
+            </span>
+          </div>
+          <div class="container_button">
+            <button id="encrypt">Encriptar</button>
+            <button id="decrypt">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+      <section class="two">
+        <div class="container_output">
+          <div id="no_found" class="hide">
+            <div>
+              <img
+                src="./public/image/no-search.svg"
+                alt="no se encontró resultado"
+                height="336px"
+                width="304px"
+              />
+              <span class="no_search">Ningún mensaje fue encontrado</span>
+            </div>
+          </div>
+          <div class="flex_auto">
+            <textarea
+              placeholder="Ingresa el texto que desees encriptar o desencriptar."
+              readonly
+              name=""
+              class="message"
+              id="messageOutput"
+            ></textarea>
+          </div>
+          <div class="container_button"><button id="copy">Copiar</button></div>
+        </div>
+      </section>
+    </main>
+    <script src="./logic.js"></script>
+  </body>
+</html>
